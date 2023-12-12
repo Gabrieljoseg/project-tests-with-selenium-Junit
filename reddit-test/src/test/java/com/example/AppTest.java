@@ -1,15 +1,27 @@
 package com.example;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import com.example.App;
 import java.net.MalformedURLException;
 import java.net.URL;
-import org.junit.jupiter.api.*;
-import org.openqa.selenium.WebDriver;
+import java.util.List;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.*; 
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AppTest {
 
-    private WebDriver driver;
+    private RemoteWebDriver driver;
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
@@ -41,6 +53,8 @@ public class AppTest {
         assertEquals("Java (linguagem de programação)", driver.findElement(By.cssSelector(".mw-headline")).getText());
     }
 
+    private void fazerLogin(String string, String string2) {
+    }
     @Test
     public void testFazerLogin() {
         fazerLogin("username", "password");
@@ -83,14 +97,17 @@ public class AppTest {
 
     @Test
     public void testFiltrarResultadosPesquisa() {
-        driver.findElement(By.id("searchInput")).sendKeys("Java");
-        driver.findElement(By.id("filter_type")).selectByValue("articles");
-        driver.findElement(By.id("searchButton")).click();
-        List<WebElement> results = driver.findElements(By.cssSelector(".mw-search-result-heading"));
-        for (WebElement result : results) {
-            assertTrue(result.getText().contains("Java"));
-        }
+    Select filterType = new Select(driver.findElement(By.id("filter_type")));
+
+    driver.findElement(By.id("searchInput")).sendKeys("Java");
+    filterType.selectByValue("articles");
+    driver.findElement(By.id("searchButton")).click();
+
+    List<WebElement> results = driver.findElements(By.cssSelector(".mw-search-result-heading"));
+    for (WebElement result : results) {
+        assertTrue(result.getText().contains("Java"));
     }
+}
 
     @Test
     public void testNavegarEntrePáginas() {
