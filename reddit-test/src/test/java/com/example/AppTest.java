@@ -1,139 +1,116 @@
 package com.example;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import com.example.App;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.*; 
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AppTest {
 
-    private RemoteWebDriver driver;
+    private WebDriver driver;
 
     @BeforeEach
-    public void setUp() throws MalformedURLException {
-        // Configura as opções do Chrome
-        ChromeOptions options = new ChromeOptions();
-
-        // Inicializa o RemoteWebDriver para se conectar ao Selenium Server no Docker
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-        driver.get("https://pt.wikipedia.org/wiki/");
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        driver = new ChromeDriver();
+        driver.get("https://www.amazon.com");
     }
 
-    @AfterEach
+    @Test
+    public void testSearchFunctionality() {
+        WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
+        searchBox.sendKeys("Java Programming");
+        searchBox.submit();
+        Assertions.assertTrue(driver.getTitle().contains("Java Programming"));
+    }
+
+    @Test
+    public void testNavigationToLoginPage() {
+        WebElement accountList = driver.findElement(By.id("nav-link-accountList"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(accountList).perform();
+        WebElement signInButton = driver.findElement(By.id("nav-flyout-ya-signin"));
+        signInButton.click();
+        Assertions.assertTrue(driver.getTitle().contains("Sign-In"));
+    }
+
+    @Test
+    public void testAddToCart() {
+        testSearchFunctionality();
+        WebElement firstItem = driver.findElement(By.cssSelector(".s-result-item.s-asin"));
+        firstItem.click();
+        WebElement addToCartButton = driver.findElement(By.id("add-to-cart-button"));
+        addToCartButton.click();
+        WebElement cart = driver.findElement(By.id("nav-cart"));
+        cart.click();
+        Assertions.assertTrue(driver.getTitle().contains("Shopping Cart"));
+    }
+
+    @Test
+    public void testRemoveFromCart() {
+        testAddToCart();
+        WebElement deleteButton = driver.findElement(By.cssSelector(".sc-action-delete"));
+        deleteButton.click();
+        Assertions.assertTrue(driver.findElement(By.cssSelector(".sc-your-amazon-cart-is-empty")).isDisplayed());
+    }
+
+    @Test
+    public void testChangeLanguageToSpanish() {
+        WebElement languageDropdown = driver.findElement(By.id("icp-nav-flyout"));
+        languageDropdown.click();
+        WebElement spanishOption = driver.findElement(By.cssSelector("a[href*='language=es_US']"));
+        spanishOption.click();
+        Assertions.assertTrue(driver.findElement(By.cssSelector("span.nav-line-2")).getText().contains("ES"));
+    }
+
+    @Test
+    public void testProductReviewSection() {
+        testSearchFunctionality();
+        WebElement firstItem = driver.findElement(By.cssSelector(".s-result-item.s-asin"));
+        firstItem.click();
+        WebElement reviewsTab = driver.findElement(By.id("reviewsTabTrigger"));
+        reviewsTab.click();
+        Assertions.assertTrue(driver.findElement(By.id("cm_cr-review_list")).isDisplayed());
+    }
+
+    @Test
+    public void testFilterByPrime() {
+        testSearchFunctionality();
+        WebElement primeCheckbox = driver.findElement(By.cssSelector("i.a-icon.a-icon-checkbox"));
+        primeCheckbox.click();
+        Assertions.assertTrue(driver.findElement(By.cssSelector("i.a-icon.a-icon-prime")).isDisplayed());
+    }
+
+    @Test
+    public void testSortByPriceLowToHigh() {
+        testSearchFunctionality();
+        Select sortDropdown = new Select(driver.findElement(By.id("s-result-sort-select")));
+        sortDropdown.selectByValue("price-asc-rank");
+        Assertions.assertTrue(driver.findElement(By.cssSelector("span.a-dropdown-label")).getText().contains("Price: Low to High"));
+    }
+
+    @Test
+    public void testCustomerServicePage() {
+        WebElement customerServiceLink = driver.findElement(By.linkText("Customer Service"));
+        customerServiceLink.click();
+        Assertions.assertTrue(driver.getTitle().contains("Customer Service"));
+    }
+
+    @Test
+    public void testTodayDealsPage() {
+        WebElement todaysDealsLink = driver.findElement(By.linkText("Today's Deals"));
+        todaysDealsLink.click();
+        Assertions.assertTrue(driver.getTitle().contains("Gold Box Deals"));
+    }
+
+    // Clean up
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
-
-    @Test
-    public void testAcessarHomepage() {
-        driver.get("https://pt.wikipedia.org/wiki/Wikipédia");
-        assertEquals("Wikipédia", driver.getTitle());
-    }
-
-    @Test
-    public void testPesquisarPorTermo() {
-        driver.findElement(By.id("searchInput")).sendKeys("Java");
-        driver.findElement(By.id("searchButton")).click();
-        assertEquals("Java (linguagem de programação)", driver.findElement(By.cssSelector(".mw-headline")).getText());
-    }
-
-    private void fazerLogin(String string, String string2) {
-    }
-    @Test
-    public void testFazerLogin() {
-        fazerLogin("username", "password");
-        assertEquals("Sair", driver.findElement(By.id("logoutLink")).getText());
-    }
-
-    @Test
-    public void testFazerLogout() {
-        fazerLogin("username", "password");
-        driver.findElement(By.id("logoutLink")).click();
-        assertEquals("Iniciar sessão", driver.findElement(By.id("loginLink")).getText());
-    }
-
-    @Test
-    public void testCriarNovaPágina() {
-        driver.findElement(By.id("createNewPage")).click();
-        driver.findElement(By.id("title")).sendKeys("Título da nova página");
-        driver.findElement(By.id("content")).sendKeys("Conteúdo da nova página");
-        driver.findElement(By.id("saveButton")).click();
-        assertEquals("Título da nova página", driver.findElement(By.cssSelector(".mw-headline")).getText());
-    }
-
-    @Test
-    public void testEditarPáginaExistente() {
-        driver.get("https://pt.wikipedia.org/wiki/Java");
-        driver.findElement(By.id("editLink")).click();
-        driver.findElement(By.id("content")).clear();
-        driver.findElement(By.id("content")).sendKeys("Novo conteúdo da página");
-        driver.findElement(By.id("saveButton")).click();
-        assertEquals("Novo conteúdo da página", driver.findElement(By.cssSelector(".mw-content-ltr")).getText());
-    }
-
-    @Test
-    public void testDeletarPágina() {
-        driver.get("https://pt.wikipedia.org/wiki/Java");
-        driver.findElement(By.id("deleteLink")).click();
-        driver.findElement(By.id("confirmButton")).click();
-        assertEquals("Página não encontrada", driver.findElement(By.cssSelector(".mw-headline")).getText());
-    }
-
-    @Test
-    public void testFiltrarResultadosPesquisa() {
-    Select filterType = new Select(driver.findElement(By.id("filter_type")));
-
-    driver.findElement(By.id("searchInput")).sendKeys("Java");
-    filterType.selectByValue("articles");
-    driver.findElement(By.id("searchButton")).click();
-
-    List<WebElement> results = driver.findElements(By.cssSelector(".mw-search-result-heading"));
-    for (WebElement result : results) {
-        assertTrue(result.getText().contains("Java"));
-    }
-}
-
-    @Test
-    public void testNavegarEntrePáginas() {
-        driver.get("https://pt.wikipedia.org/wiki/Java");
-        driver.findElement(By.linkText("Linguagem de programação")).click();
-        assertEquals("Linguagem de programação", driver.findElement(By.cssSelector(".mw-headline")).getText());
-    }
-
-    @Test
-    public void testSeguirDeixarSeguirUsuarios() {
-        fazerLogin("username", "password");
-        driver.get("https://pt.wikipedia.org/wiki/User:OutroUsuario");
-        driver.findElement(By.id("followButton")).click();
-        assertTrue(driver.findElement(By.id("followButton")).getText().equals("Deixar de seguir"));
-        driver.findElement(By.id("followButton")).click();
-        assertTrue(driver.findElement(By.id("followButton")).getText().equals("Seguir"));
-    }
-
-    @Test
-    public void testComentarPágina() {
-        fazerLogin("username", "password");
-        driver.get("https://pt.wikipedia.org/wiki/Java");
-        driver.findElement(By.id("commentInput")).sendKeys("Este é um comentário de teste.");
-        driver.findElement(By.id("publishButton")).click();
-        assertTrue(driver.findElement(By.cssSelector(".mw-comment-text")).getText().contains("Este é um comentário de teste."));
-    }
-
-
 }
