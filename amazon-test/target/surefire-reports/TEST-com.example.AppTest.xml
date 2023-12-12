@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AppTest" time="113.642" tests="10" errors="10" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/project-tests-with-selenium-Junit/amazon-test/target/test-classes:/workspace/project-tests-with-selenium-Junit/amazon-test/target/classes:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/workspace/m2-repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/workspace/m2-repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/workspace/m2-repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/workspace/m2-repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/workspace/m2-repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/workspace/m2-repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/workspace/m2-repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/workspace/m2-repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/workspace/m2-repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/11.0.21.fx-zulu/lib"/>
+    <property name="sun.java.command" value="/workspace/project-tests-with-selenium-Junit/amazon-test/target/surefire/surefirebooter2183537386122183960.jar /workspace/project-tests-with-selenium-Junit/amazon-test/target/surefire 2023-12-12T02-46-25_847-jvmRun1 surefire17793970594129767359tmp surefire_011817100240998426111tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspace/project-tests-with-selenium-Junit/amazon-test/target/test-classes:/workspace/project-tests-with-selenium-Junit/amazon-test/target/classes:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/workspace/m2-repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/workspace/m2-repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/workspace/m2-repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/workspace/m2-repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/workspace/m2-repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-java/4.16.1/selenium-java-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chrome-driver/4.16.1/selenium-chrome-driver-4.16.1.jar:/workspace/m2-repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chromium-driver/4.16.1/selenium-chromium-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-json/4.16.1/selenium-json-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-manager/4.16.1/selenium-manager-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v118/4.16.1/selenium-devtools-v118-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v119/4.16.1/selenium-devtools-v119-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v120/4.16.1/selenium-devtools-v120-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v85/4.16.1/selenium-devtools-v85-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-edge-driver/4.16.1/selenium-edge-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-driver/4.16.1/selenium-firefox-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-http/4.16.1/selenium-http-4.16.1.jar:/workspace/m2-repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-ie-driver/4.16.1/selenium-ie-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-remote-driver/4.16.1/selenium-remote-driver-4.16.1.jar:/workspace/m2-repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/workspace/m2-repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/workspace/m2-repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/workspace/m2-repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/workspace/m2-repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/workspace/m2-repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-os/4.16.1/selenium-os-4.16.1.jar:/workspace/m2-repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-safari-driver/4.16.1/selenium-safari-driver-4.16.1.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-support/4.16.1/selenium-support-4.16.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/11.0.21.fx-zulu"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspace/project-tests-with-selenium-Junit/amazon-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.68+17-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspace/project-tests-with-selenium-Junit/amazon-test/target/surefire/surefirebooter2183537386122183960.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.21+9-LTS"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.1.57-060157-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.68+17-CA"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.21"/>
+    <property name="user.dir" value="/workspace/project-tests-with-selenium-Junit/amazon-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.21+9-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testTodayDealsPage" classname="com.example.AppTest" time="112.395">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testChangeLanguageToSpanish" classname="com.example.AppTest" time="0.184">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testSearchFunctionality" classname="com.example.AppTest" time="0.135">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testSortByPriceLowToHigh" classname="com.example.AppTest" time="0.131">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testCustomerServicePage" classname="com.example.AppTest" time="0.13">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testRemoveFromCart" classname="com.example.AppTest" time="0.13">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testAddToCart" classname="com.example.AppTest" time="0.137">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testFilterByPrime" classname="com.example.AppTest" time="0.132">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testProductReviewSection" classname="com.example.AppTest" time="0.136">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+  <testcase name="testNavigationToLoginPage" classname="com.example.AppTest" time="0.125">
+    <error message="Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.&#10;  (session not created: DevToolsActivePort file doesn&apos;t exist)&#10;  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) &#10;Host info: host: &apos;gabrieljose-projecttest-bbhds38cwkn&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.57-060157-generic&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+</error>
+  </testcase>
+</testsuite>

@@ -1,0 +1,124 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 113.642 s <<< FAILURE! - in com.example.AppTest
+testTodayDealsPage  Time elapsed: 112.395 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testChangeLanguageToSpanish  Time elapsed: 0.184 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testSearchFunctionality  Time elapsed: 0.135 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testSortByPriceLowToHigh  Time elapsed: 0.131 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testCustomerServicePage  Time elapsed: 0.13 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testRemoveFromCart  Time elapsed: 0.13 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testAddToCart  Time elapsed: 0.137 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testFilterByPrime  Time elapsed: 0.132 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testProductReviewSection  Time elapsed: 0.136 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
+testNavigationToLoginPage  Time elapsed: 0.125 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /home/gitpod/.cache/selenium/chrome/linux64/120.0.6099.71/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'gabrieljose-projecttest-bbhds38cwkn', ip: '127.0.0.1'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.57-060157-generic', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: /home/gitpod/.cache/seleniu..., extensions: []}}]}]
+	at com.example.AppTest.setUp(AppTest.java:19)
+
